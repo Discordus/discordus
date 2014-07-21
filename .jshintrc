@@ -1,0 +1,15 @@
+{
+    "node": true,
+    "quotmark": "single",
+    "eqeqeq": true,
+    "freeze": true,
+    "latedef": true,
+    "newcap": true,
+    "noarg": true,
+    "nonbsp": true,
+    "nonew": true,
+    "unused": true,
+    "undef": true,
+    "trailing": true,
+    "smarttabs": true
+}
