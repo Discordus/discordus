@@ -5,12 +5,12 @@ module.exports = function(grunt) {
     grunt.initConfig({
         watch: {
             scripts: {
-                files: ['*.js', 'lib/**/*.js'],
+                files: ['*.js', 'src/**/*.js'],
                 tasks: ['jshint']
             }
         },
         jshint: {
-            all: ['*.js', 'lib/**/*.js'],
+            all: ['*.js', 'src/**/*.js'],
             options: {
                 jshintrc: true
             }

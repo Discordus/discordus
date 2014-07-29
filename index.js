@@ -15,12 +15,18 @@ var services = [
 ];
 
 var controllers = [
+    'Websocket'
 ];
 
 var modules = [
     'example'
 ];
 
+
+controllers.forEach(function(path) {
+    var controller = require('./src/controllers/' + path);
+    controller.start();
+});
 
 modules.forEach(function(path) {
     var module = require('./src/modules/' + path);

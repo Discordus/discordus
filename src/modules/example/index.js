@@ -15,6 +15,7 @@
  * See bellow
  */
 
+var Websocket = require('../../controllers/Websocket');
 
 
 /**
@@ -27,6 +28,12 @@
  */
 function start() {
     console.log('start module');
+
+// How to get socket.io instance:
+    var socket = Websocket.getSocket('example');
+
+    var _addPlayer = function() {};
+    socket.on('connection', _addPlayer);
 }
 
 
@@ -41,6 +48,9 @@ function start() {
  */
 function stop() {
     console.log('stop module');
+
+    //If a Websocket instance is used, all listeners should be removed:
+    //socket.removeAllListeners('connexion');
 }
 
 
